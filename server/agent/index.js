@@ -1,9 +1,13 @@
 import express from 'express'
 import  cors from 'cors'
 import {agent} from './agent.js'
+import serverless from 'serverless-http'
+
+
 
 
 const app= express()
+serverless(app)
 app.use(express.json())
 app.use(cors({origin:'*'}))
 
