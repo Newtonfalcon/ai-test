@@ -12,7 +12,7 @@ app.use(express.json())
 app.use(cors({origin:'*'}))
 
 
-const port = 3300
+const port = process.env.PORT || 3300 
 
 
 
