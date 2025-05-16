@@ -11,7 +11,7 @@ dotenv.config()
 const mathTool = tool(async ({query})=>{
 
     console.log('query', query);
-    return `30 + 30 = 60`
+    //return `30 + 30 = 60`
     
 
 }, {name:'math', 
@@ -58,7 +58,7 @@ const jsExecutor = tool(async ({code})=>{
 
 const llm = new ChatGroq({
     apiKey: process.env.GROQ_API,
-    model:"deepseek-r1-distill-llama-70b",
+    model:"whisper-large-v3-turbo",
 })
 
 const checkpointsaver = new MemorySaver()
