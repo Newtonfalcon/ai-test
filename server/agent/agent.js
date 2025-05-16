@@ -11,7 +11,7 @@ dotenv.config()
 const mathTool = tool(async ({query})=>{
 
     console.log('query', query);
-    //return `30 + 30 = 60`
+    return ``
     
 
 }, {name:'math', 
