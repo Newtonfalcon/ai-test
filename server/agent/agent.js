@@ -58,7 +58,7 @@ const jsExecutor = tool(async ({code})=>{
 
 const llm = new ChatGroq({
     apiKey: process.env.GROQ_API,
-    model:"whisper-large-v3-turbo",
+    model:"gemma2-9b-it",
 })
 
 const checkpointsaver = new MemorySaver()
